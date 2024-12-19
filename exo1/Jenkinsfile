@@ -1,0 +1,20 @@
+pipeline{
+    agent any
+    stages{
+        stage('Clonne du depo git'){
+            steps{
+                git 'https://github.com/devfullsy/devsecops.git'
+            }
+        }
+        stage('Construction'){
+            steps{
+                echo 'Construction termine'
+            }
+        }
+        stage('Teste'){
+                steps{
+                    sh 'echo $(expr 1+1)'
+                }
+            }
+        }
+    }
