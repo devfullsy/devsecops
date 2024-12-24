@@ -15,6 +15,6 @@ spec:
     spec:
       containers: 
       - name: devops-app-exo3
-        image: devops-app-exo3
+        image: devops-app-exo3:latest
         ports:
         - containerPort: 5000

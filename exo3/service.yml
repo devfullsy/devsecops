@@ -7,7 +7,7 @@ spec:
   selector:
     app: devops-app-exo3
   ports:
-    - protocol: tcp
+    - protocol: TCP
       port: 80
       targetPort: 5000
-  type: NodePort
+  type: LoadBalancer
