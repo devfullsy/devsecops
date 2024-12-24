@@ -1,0 +1,13 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: devops-app-exo3-service
+spec:
+  selector:
+    app: devops-app-exo3
+  ports:
+    - protocol: tcp
+      port: 80
+      targetPort: 5000
+  type: NodePort

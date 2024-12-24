@@ -1,0 +1,20 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: devops-app-exo3
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: devops-app-exo3
+  template:
+    metadata:
+      labels:
+        app: devops-app-exo3
+    spec:
+      containers: 
+      - name: devops-app-exo3
+        image: devops-app-exo3
+        ports:
+        - containerPort: 5000
